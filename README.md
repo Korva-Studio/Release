@@ -1,51 +1,46 @@
 # Korva Releases
 
-Public release and distribution information for **Korva**, a Windows desktop
-application for DAW project organisation.
+> **CURRENT STATUS — 2026-11-19:** Korva is **offline** while its production
+> infrastructure is rebuilt on a new server. The original production host was
+> repurposed. Do **not** treat historical release URLs, signed manifest records
+> or website links as proof of a currently supported download.
+>
+> **No new public release is authorized.** Desktop `0.6.000` is an **internal
+> Avalonia release candidate**, not a published distribution. Real public
+> release availability, artifact hashes and channel promotion must be checked
+> against the new production host after owner approval.
+>
+> Operational authority and launch rules:
+> [Current launch state](https://github.com/Korva-Studio/Korva-API/blob/main/docs/CURRENT-LAUNCH-STATE.md)
+> (private internal document).
 
-This repository is an information surface only. It does not host binaries and
-it is not the release authority.
+This repository retains public release **history** and distribution information.
+It does **not** host binaries and is not the release authority.
 
-## Current release
+## Historical release listing — not a current download recommendation
 
 | | |
 |---|---|
-| Version | **0.4.367** |
-| Channel | `release` |
-| Platform | Windows x64 |
-| Installer | [Korva-0.4.367-windows-x64-setup.exe](https://releases.korva.studio/releases/v0.4.367/Korva-0.4.367-windows-x64-setup.exe) |
-| Installer size | 179,677,599 bytes |
+| Previously recorded version | **0.4.367** |
+| Historical channel | `release` |
+| Historical platform | Windows x64 |
+| Historical installer filename | `Korva-0.4.367-windows-x64-setup.exe` |
+| Historical installer size | 179,677,599 bytes |
 
-## Download and update
+The previously recorded release path was
+`https://releases.korva.studio/releases/v0.4.367/` with
+`latest.json`, an RS256 signature identified as `release-2026-01`, and
+`Korva.cdx.json` (SBOM). These are **historical records, not tested current URLs**.
 
-Download the installer from the link above, or from
-[korva.studio/download](https://korva.studio/download/).
+Korva intends to distribute immutable artifacts through its API-authorized
+Cloudflare R2 release lane. GitHub Releases are not the binary hosting mechanism.
+The owner will authorize new publication only after technical, commercial,
+security, legal and infrastructure launch gates are satisfied.
 
-Korva checks for updates by reading the signed release manifest for its
-channel:
+## Release notes and downloads
 
-- Manifest: <https://releases.korva.studio/releases/v0.4.367/latest.json>
-- Signature: RS256, key `release-2026-01`
-- Software bill of materials: <https://releases.korva.studio/releases/v0.4.367/Korva.cdx.json>
+The public download page is `https://korva.studio/download/`, but its
+availability and content are **unverified while Korva is offline**. Do not
+advertise candidate `0.6.000` binaries as publicly available.
 
-Release artifacts are served from `releases.korva.studio`, backed by Cloudflare
-R2. **GitHub Releases are not used for distribution.** The versioned URL for a
-release is immutable; a new build is published under a new version rather than
-overwriting an existing one.
-
-## Release notes
-
-Release notes and the current download are published at
-<https://korva.studio/download/>. Changelog announcements are posted in the
-Korva Discord.
-
-## Source code
-
-Korva's source lives in private repositories under
-[github.com/Korva-Studio](https://github.com/Korva-Studio). This repository is a
-public release-information surface, not a source mirror.
-
-## Reporting a problem
-
-Use the support channels linked from <https://korva.studio/>. Please do not
-include credentials, license keys, or personal data in a public issue.
+See Git history for prior version-specific information.
